@@ -1,4 +1,7 @@
 body{
     margin: 0;
-    
 }
+
+@import "lib/header.scss";
+@import "lib/menu.scss";
+@import "lib/body.scss";
