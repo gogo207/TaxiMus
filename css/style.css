@@ -49,3 +49,13 @@ body {
 #menu .side ul li :hover {
   background-color: #f8c62075;
 }
+
+#mainbody .sidemenu02 {
+  margin-left: -245px;
+}
+#mainbody .table02 {
+  height: 200px;
+  background: red;
+  margin-right: -245px;
+  margin-left: -30px;
+}
