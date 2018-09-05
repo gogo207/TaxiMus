@@ -52,10 +52,14 @@ body {
 
 #mainbody .sidemenu02 {
   margin-left: -245px;
+  border: 1px solid black;
+  background-image: url(../images/bg.jpg);
+}
+#mainbody .sidemenu02 a {
+  color: black;
 }
 #mainbody .table02 {
-  height: 200px;
-  background: red;
   margin-right: -245px;
   margin-left: -30px;
+  border: 1px solid black;
 }
