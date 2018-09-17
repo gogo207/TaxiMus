@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c8cfbe8569be459981eee446e6559594" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Admin" Width="1.5" PointX="5.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Category" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Driver" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Gender" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Image" Width="1.5" PointX="0.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Manufacturer" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Model" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Review" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Ride" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="7.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Vehicle" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__Vehicles__Catego__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Drivers__GenderI__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Drivers__ImageID__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Reviews__DriverI__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Rides__DriverID__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Users__ImageID__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Vehicles__Manufa__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Vehicles__ModelI__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Reviews__UserID__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Rides__UserID__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Rides__VehicleID__403A8C7D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
