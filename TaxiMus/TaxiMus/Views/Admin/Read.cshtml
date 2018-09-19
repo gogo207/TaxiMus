@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Read";
+}
+
+<h2>Read</h2>
+
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Login</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var admin in ViewBag.Admins)
+    {
+
+        <tr>
+            <td>@admin.ID</td>
+            <td>@admin.Login</td>
+            <td>@admin.Password</td>
+        </tr>
+}
+        </tbody>
+    </table>
+</div>
+
+<a href="~/Admin/Create" class="btn btn-info" role="button">Create New</a>
