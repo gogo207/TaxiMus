@@ -130,8 +130,11 @@
     </Compile>
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\GenderController.cs" />
     <Compile Include="Controllers\ManufacturerController.cs" />
     <Compile Include="Controllers\ModelController.cs" />
+    <Compile Include="Controllers\VehicleController.cs" />
+    <Compile Include="Controllers\VehicleControllerTest.cs" />
     <Compile Include="Driver.cs">
       <DependentUpon>TaxiMusModel.tt</DependentUpon>
     </Compile>
@@ -204,6 +207,20 @@
     <Content Include="Views\Manufacturer\Read.cshtml" />
     <Content Include="Views\Model\Create.cshtml" />
     <Content Include="Views\Model\Read.cshtml" />
+    <Content Include="Views\Category\Read.cshtml" />
+    <Content Include="Views\Category\Create.cshtml" />
+    <Content Include="Views\Vehicle\Read.cshtml" />
+    <Content Include="Views\Vehicle\Create.cshtml" />
+    <Content Include="Views\Gender\Create.cshtml" />
+    <Content Include="Views\Gender\Delete.cshtml" />
+    <Content Include="Views\Gender\Details.cshtml" />
+    <Content Include="Views\Gender\Edit.cshtml" />
+    <Content Include="Views\Gender\Index.cshtml" />
+    <Content Include="Views\VehicleControllerTest\Create.cshtml" />
+    <Content Include="Views\VehicleControllerTest\Delete.cshtml" />
+    <Content Include="Views\VehicleControllerTest\Details.cshtml" />
+    <Content Include="Views\VehicleControllerTest\Edit.cshtml" />
+    <Content Include="Views\VehicleControllerTest\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -214,7 +231,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Category\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

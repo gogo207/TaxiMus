@@ -21,13 +21,16 @@ namespace TaxiMus.Controllers
         [HttpPost]
         public ActionResult Create(string name)
         {
-
+            Category newCategory = new Category();
+            newCategory.Name = name;
+            TMDB.Categories.Add(newCategory);
+            TMDB.SaveChanges();
             return RedirectToAction("Read");
         }
 
         public ActionResult Read()
         {
-            ViewBag.Categoties = TMDB.Categories.ToList();
+            ViewBag.Categories = TMDB.Categories.ToList();
             return View();
         }
     }

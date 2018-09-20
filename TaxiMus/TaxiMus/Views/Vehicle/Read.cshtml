@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Read";
+}
+
+<h2>Read</h2>
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Plate Number</th>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Category</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vehicle in ViewBag.Vehicles)
+    {
+            <tr>
+                <td>@vehicle.ID</td>
+                <td>@vehicle.PlateNumber</td>
+                <td>@vehicle.Manufacturer</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Category</td>
+                <td>@vehicle.Year</td>
+            </tr>
+}
+        </tbody>
+    </table>
+</div>
+
+<a href="~/Model/Create" class="btn btn-info" role="button">Create New</a>

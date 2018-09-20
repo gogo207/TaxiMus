@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Read";
+}
+
+<h2>Read</h2>
+
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in ViewBag.Categories)
+    {
+        <tr>
+            <td>@category.ID</td>
+            <td>@category.Name</td>
+        </tr>
+}
+        </tbody>
+    </table>
+</div>
+
+<a href="~/Category/Create" class="btn btn-info" role="button">Create New</a>
