@@ -8,26 +8,40 @@
 
 <form action="~/Vehicle/Create" method="post">
     <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" class="form-control" id="email">
+        <label for="platenumber">Plate Number:</label>
+        <input type="text" class="form-control" id="platenumber" name="platenumber">
     </div>
     <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
-    </div>
-    <div class="form-group form-check">
-        <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Remember me
-        </label>
-    </div>
-    <div class="form-group">
-        <label for="sel1">Select list:</label>
-        <select class="form-control" id="sel1">
-            @foreach (var manufacturerid in ViewBag.ManufacturerIDs)
-    {
-        <option>@manufacturerid</option>
-}
+        <label for="sel1">Manufacturer:</label>
+        <select class="form-control" id="sel1" name="manufacturer">
+            @foreach (var manufacturername in ViewBag.Manufacturerlist)
+            {
+                <option>@manufacturername</option>
+            }
         </select>
+    </div>
+    <div class="form-group">
+        <label for="sel2">Model:</label>
+        <select class="form-control" id="sel2" name="model">
+            @foreach (var modelname in ViewBag.Modellist)
+            {
+                <option>@modelname</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sel3">Category:</label>
+        <select class="form-control" id="sel3" name="category">
+            @foreach (var category in ViewBag.Categorylist)
+            {
+                <option>@category</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="text" class="form-control" id="year" name="year">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
